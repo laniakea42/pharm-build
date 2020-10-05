@@ -37,7 +37,61 @@ function sliders() {
 
 sliders();
 
+$(document).ready(function() {
+	$("#content>div").hide(); // Скрываем содержание
+	$("#tabs li:first").attr("id","current"); // Активируем первую закладку
+	$("#content div:first").fadeIn(); // Выводим содержание
+    
+    $('#tabs a').click(function(e) {
+        e.preventDefault();        
+        $("#content>div").hide(); //Скрыть все сожержание
+        $("#tabs li").attr("id",""); //Сброс ID
+        $(this).parent().attr("id","current"); // Активируем закладку
+        $('#' + $(this).attr('title')).fadeIn(); // Выводим содержание текущей закладки
+    });
+});
+
+
 $(function(){
+
+    $('.i-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 4000
+    });
+
+    $('.vid-slider').slick({
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        dots: true,
+        arrows: true,
+        autoplaySpeed: 4000,
+    });
+
+    $('.tab1-slider').slick({
+        slidesToShow: 5,
+        autoplay: true,
+        arrows: true,
+        dots: true
+    });
+
+    $('.tab2-slider').slick({
+        slidesToShow: 5,
+        autoplay: true,
+        arrows: true,
+        dots: true
+    });
+
+    $('.tab3-slider').slick({
+        slidesToShow: 5,
+        autoplay: true,
+        arrows: true,
+        dots: true
+    });
 
     $('.search-trigger').on('click', function() {
         $('.search-bar').toggleClass('active')
@@ -45,6 +99,31 @@ $(function(){
     $('.close-bar').on('click', function() {
         $('.search-bar').toggleClass('active')
     });
+    
+    $(".add-to-cart .plus").click(function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        let input = $(this).parent().siblings('.input-counter');
+        let count = input.val();
+        count++;
+        $(this).siblings('.minus').removeClass('disabled');
+        input.attr('value', count);
+    });
+    $(".add-to-cart .minus").click(function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        let input = $(this).parent().siblings('.input-counter');
+        let count = input.val();
+        if (count <= 1) {
+            $(this).addClass('disabled');
+            return;
+        }
+        count--;
+        input.attr('value', count);
+        if (input.val() < 10) {
+        }
+    })
+
 
     $('.dropdown-menu .close-menu').on('click', function(e) {
         e.stopImmediatePropagation();
