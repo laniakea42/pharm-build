@@ -195,17 +195,28 @@ body {
 
 .footer {margin-top: auto;}
 
+.page-heading {
+	font-size: 36px;
+	color: #333;
+	@media screen and (max-width: 1200px) {
+		font-size: 30px;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 26px;
+        margin-bottom: 30px;
+	}
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
 h1 {
-	font-family: $regular;
+	font-family: $bold;
 	font-size: 42px;
-	text-transform: uppercase;
-	text-align: center;
 	color: #333;
 	line-height: 1;
 	margin: 0 0 40px;
-    a {
-        font-size: 42px;
-    }
 	@media screen and (max-width: 1200px) {
 		font-size: 32px;
 	}
@@ -237,7 +248,7 @@ h2 {
 }
 h3 {
 	font-family: $bold;
-	font-size: 24px;
+	font-size: 30px;
 	color: #333;
 	@media screen and (max-width: 1024px) {
 		font-size: 22px;
@@ -337,9 +348,10 @@ input[type="submit"] {
 }
 
 .close {
+		position: relative;
+		cursor: pointer;
     width: 25px;
     height: 25px;
-    position: absolute;
     right: 8px;
     top: 10px;
     opacity: 1;
@@ -348,7 +360,7 @@ input[type="submit"] {
 			content: '';
 			width: 25px;
 			height: 2px;
-			background-color: #c74a34;
+			background-color: #e31e24;
 			position: absolute;
 			top: 50%;
 			left: 0;
@@ -392,20 +404,6 @@ input[type="submit"] {
 	outline: 0;
 }
 
-.theis .btn {
-	background: $orange;
-	&:hover {background: #4f4f4f;}
-}
-.dolgit .btn {
-	background: #0050ae;
-	&:hover {background: #003d85;}
-}
-
-.lacalut .btn {
-	background: #e31e24;
-	&:hover {background: #bbb;}
-}
-
 .check--list {
 	@include ul-default;
 	li {
@@ -431,11 +429,6 @@ input[type="submit"] {
 	}
 }
 
-.theis .check--list li:before {
-	border-bottom: 1px solid $orange;
-	border-right: 1px solid $orange;
-}
-
 .col--location,
 .col--phone,
 .col--email,
@@ -455,6 +448,57 @@ input[type="submit"] {
 		left: 0;
 	}
 }
+
+
+.theis {
+	.col--location,
+	.col--phone,
+	.col--email,
+	.col--time,
+	.col--inst,
+	.col--fb,
+	.col--vk {
+		&:after {color:$orange}
+	}
+}
+
+.dolgit {
+	.col--location,
+	.col--phone,
+	.col--email,
+	.col--time,
+	.col--inst,
+	.col--fb,
+	.col--vk {
+		&:after {color:#0050ae}
+	}
+}
+
+.lacalut {
+	.col--location,
+	.col--phone,
+	.col--email,
+	.col--time,
+	.col--inst,
+	.col--fb,
+	.col--vk {
+		&:after {color:#e31e24}
+	}
+}
+
+.mediph {
+	.col--location,
+	.col--phone,
+	.col--email,
+	.col--time,
+	.col--inst,
+	.col--fb,
+	.col--vk {
+		&:after {color: #003b50}
+	}
+}
+
+
 .col--location:after {
 	content: '\f041';
 }
@@ -470,15 +514,15 @@ input[type="submit"] {
 	content: '\f017';
 }
 
-.col--inst {
-	content: '\f208';
+.col--inst:after {
+	content: '\f16d';
 }
 
-.col--fb {
+.col--fb:after {
 	content: '\f09a';
 }
 
-.col-vk {
+.col-vk:after {
 	content: '\f189';
 }
 
@@ -732,7 +776,6 @@ body {padding-top: 137px;}
 	.dropdown:hover:after {background: #0050ae;}
 	.cart-link:hover {color: #0050ae;}
 }
-.dolgit {.companies a:hover {border: 1px solid #0050ae;}}
 
 
 .header.lacalut {
@@ -741,7 +784,13 @@ body {padding-top: 137px;}
 	.dropdown:hover:after {background: #e31e24;}
 	.cart-link:hover {color: #e31e24;}
 }
-.lacalut {.companies a:hover {border: 1px solid #e31e24;}}
+
+.header.mediph {
+	.num {background-color: #003b50}
+	.nav a:hover:after,
+	.dropdown:hover:after {background: #003b50;}
+	.cart-link:hover {color: #003b50;}
+}
 
 
 .soc-dd .dropdown-menu {

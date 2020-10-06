@@ -2,19 +2,19 @@
 .page {
 	.news1, .news {
 		.date {
-			color: #3361eb;
+			color: $orange;
 		}
 	}
 	.page_nav {
 		.active {
-			color: #3361eb;
+			color: $orange;
 		}
 	}
     #ask-form {
         max-width: 350px;
     }
     .write {
-        color: #3361eb;
+        color: $orange;
         text-decoration: none;
         &:hover {
             text-decoration: underline;
@@ -24,7 +24,7 @@
         margin: 25px 0;
     }
     p a {
-        color: #3361eb;
+        color: $orange;
         text-decoration: underline;
         &:hover {
             text-decoration: none;
@@ -32,8 +32,9 @@
     }
     .h2 a {
         font-size: 16px;
-        color: #3361eb;
-    }
+        color: $orange;
+		}
+
 	@media screen and (max-width: 1024px) {
 		#photos-list td img {
 			width: 100%;
@@ -58,22 +59,37 @@
 		}
 	}
 }
+.theis.page p a {color: $orange;
+&:hover {color: #444}}
+.dolgit.page p a {color: #0050ae;
+&:hover {color: #444}}
+.lacalut.page p a {color: #e31e24;
+&:hover {color: #444}}
+.mediph.page p a {color: #003b50;
+&:hover {color: #444}}
+
 /* breadcrumbs */
 .breadcrumbs {
-	font-size: 16px;
+	font-size: 14px;
+	.container {
+		padding: 40px 15px 0;
+		margin-bottom: -20px;
+	}
 	ul {
 		@include ul-default;
 		li {
 			padding: 5px 0px;
-			color: #3361eb;
+			line-height: 1.2;
+			color: #666;
 			@include inline-block;
 			a {
 				text-decoration: none;
+				color: $orange;
 			}
 			&:after {
-				content: '/';
+				content: '|';
 				margin: 0px 2px 0px 7px;
-				color: #282727;
+				color: #666;
 				@include inline-block;
 			}
 			&:last-of-type:after {
@@ -83,6 +99,12 @@
 	}
 }
 /* breadcrumbs */
+.theis .breadcrumbs li a {color: $orange;}
+.dolgit .breadcrumbs li a {color: #0050ae;}
+.lacalut .breadcrumbs li a {color: #e31e24;}
+.mediph .breadcrumbs li a {color: #003b50;}
+
+
 
 /* modal */
 .modal {
@@ -211,100 +233,262 @@
     }
 }
 
-.call--btn {
-    position: fixed;
-    bottom: 100px;
-    right: 40px;
-    display: table;
-    background-color: #ffcc00;
-    font-family: 'FontAwesome';
-    border-radius: 100%;
-    text-decoration: none!important;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    padding: 23px 5px 5px 5px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
-    box-sizing: border-box;
-    outline: none!important;
-    z-index: 1;
-    &:hover {
-        animation-name: phone;
-        animation-iteration-count: 1;
-        animation-duration: 0.7s;
-    }
-    i {
-        display: block;
-        font-size: 35px;
-        color: #fff;
-    }
-    &:after, &:before  {
-        content: '';
-        width: 90%;
-        height: 90%;
-        background-color: transparent;
-        border: 1px solid #ffcc00;
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        border-radius: 100%;
-        animation-iteration-count: infinite;
-        animation-duration: 1.2s;
-        animation-name: ring;
-        outline: none;  
-    }
-    &:after {
-        animation-delay: 0.6s;
-    }
-    &:before {
-        animation-delay: 0.8s;
-        border: 1px solid #d9af04;
-    }
-    @media screen and (max-width: 1440px) {
-        margin-right: 0;
-        right: 35px;
-        bottom: 75px;
-    }
-    @media screen and (max-width: 991px) {
-        width: 50px;
-        height: 50px;
-        padding-top: 15px;
-        right: 15px;
-        bottom: 80px;
-        i {
-            font-size: 24px;
-        }
-    }
-    @media screen and (max-width: 768px) {
-        bottom: 50px;
+
+.theis .btn {
+	background: $orange;
+	&:hover {background: #4f4f4f;}
+	&.btn-trans {
+		border: 1px solid $orange;
+		color: $orange;
+		background: transparent;
+		&:hover {
+			color: #fff;
+			background: $orange;
+		}
+	}
+}
+
+.dolgit .btn {
+	background: #0050ae;
+	&:hover {background: #003d85;}
+	&.btn-trans {
+		border: 1px solid #0050ae;
+		color: #0050ae;
+		background: transparent;
+		&:hover {
+			color: #fff;
+			background: #0050ae;
+		}
+	}
+}
+
+.lacalut .btn {
+	background: #e31e24;
+	&:hover {background: #bbb;}
+	&.btn-trans {
+		border: 1px solid #e31e24;
+		color: #e31e24;
+		background: transparent;
+		&:hover {
+			color: #fff;
+			background: #e31e24;
+		}
+	}
+}
+
+.mediph .btn {
+	background: #003b50;
+	&:hover {background: #bbb;}
+	&.btn-trans {
+		border: 1px solid #003b50;
+		color: #003b50;
+		background: transparent;
+		&:hover {
+			color: #fff;
+			background: #003b50;
+		}
+	}
+}
+
+
+
+.theis .check--list li:before {
+	border-bottom: 1px solid $orange;
+	border-right: 1px solid $orange;
+}
+.dolgit .check--list li:before {
+	border-bottom: 1px solid #0050ae;
+	border-right: 1px solid #0050ae;
+}
+.lacalut .check--list li:before {
+	border-bottom: 1px solid #e31e24;
+	border-right: 1px solid #e31e24;
+}
+.mediph .check--list li:before {
+	border-bottom: 1px solid #003b50;
+	border-right: 1px solid #003b50;
+}
+
+
+
+
+.dolgit {.companies a:hover {border: 1px solid #0050ae;}}
+.lacalut {.companies a:hover {border: 1px solid #e31e24;}}
+.medoph {.companies a:hover {border: 1px solid #003b50;}}
+
+
+
+
+.dolgit .t-card .btn:hover {background: #0050ae;}
+.lacalut .t-card .btn:hover {background: #e31e24;}
+.theis .t-card .btn:hover {background: $orange;}
+.mediph .t-card .btn:hover {background: #003b50;}
+
+
+
+// HERE ARE store-links, lacalut is default
+.dolgit .store-link {
+    .title {border-top: 1px solid #0050ae;}
+    &:hover .title {
+        background: #0050ae;
+        color: #fff !important;
     }
 }
 
-@keyframes ring {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  100% {
-    opacity: 0.1;
-    transform: scale(1.7);
-  }
-}
-@keyframes phone {
-  20% {
-   transform: rotate(-30deg); 
-  }
-
-  80% {
-    transform: rotate(390deg)
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+.theis .store-link {
+.title {border-top: 1px solid $orange;}
+&:hover .title {
+    background: $orange;
+    color: #fff !important;
+    }
 }
 
-/* modal */
+.mediph .store-link {
+    .title {border-top: 1px solid #003b50;}
+    &:hover .title {
+        background: #003b50;
+        color: #fff !important;
+    }
+}
 
-/* page content */
+
+//TABS AND SLICK_DOTS COLORS
+.dolgit {
+	.slider .slick-dots li{
+		&.slick-active button {background-color: #0050ae;}
+		&:after {
+			border: 1px solid #0050ae;
+		}
+	}
+	.i-slider {
+		.item .content {
+			color: #666666;
+			right: auto;
+			left: calc(50% - 670px);
+		}
+		h1 {color: #333333;}
+		.slick-prev,
+		.slick-next {
+			z-index: 2;
+			width: 70px;
+			&:before { background: #999999;}
+			&:after {
+				border-bottom: 2px solid #999999;
+				border-right: 2px solid #999999;
+			}
+		}
+	}
+	.play {
+		background-color: #0050ae;
+		&:after {
+			border: 2px solid rgba($color: #0050ae, $alpha: .5);
+		}
+		&:hover:after {
+			background: rgba($color: #0050ae, $alpha: .3);
+			border: 2px solid transparent;
+		}
+	}
+}
+
+.lacalut {
+	.slider .slick-dots li{
+		&.slick-active button {background-color: #e31e24;}
+		&:after {
+			border: 1px solid #e31e24;
+		}
+	}
+	.i-slider {
+		.item .content {
+			color: #666666;
+			right: auto;
+			left: calc(50% - 670px);
+		}
+		h1 {color: #333333;}
+		.slick-prev,
+		.slick-next {
+			z-index: 2;
+			width: 70px;
+			&:before { background: #999999;}
+			&:after {
+				border-bottom: 2px solid #999999;
+				border-right: 2px solid #999999;
+			}
+		}
+	}
+	.play {
+		background-color: #e31e24;
+		&:after {
+			border: 2px solid rgba($color: #e31e24, $alpha: .5);
+		}
+		&:hover:after {
+			background: rgba($color: #e31e24, $alpha: .3);
+			border: 2px solid transparent;
+		}
+	}
+	#tabs{
+		a:after {background: #e31e24;}
+		#current a {
+			color: #e31e24
+		}
+	}
+}
+
+.theis {
+	.slider .slick-dots li{
+		&.slick-active button {background-color: $orange;}
+		&:after {
+			border: 1px solid $orange;
+		}
+	}
+
+	#tabs{
+		a:after {background: $orange;}
+		#current a {
+			color: $orange;
+		}
+	}
+}
+
+.mediph {
+	.slider .slick-dots li{
+        button {background: #ccc;}
+		&.slick-active button {background-color: #003b50;}
+		&:after {
+			border: 1px solid #003b50;
+		}
+	}
+	.i-slider {
+		.item .content {
+			color: #666666;
+			right: auto;
+			left: calc(50% - 670px);
+		}
+		h1 {color: #333333;}
+		.slick-prev,
+		.slick-next {
+			z-index: 2;
+			width: 70px;
+			&:before { background: #999999;}
+			&:after {
+				border-bottom: 2px solid #999999;
+				border-right: 2px solid #999999;
+			}
+		}
+	}
+	.play {
+		background-color: #003b50;
+		&:after {
+			border: 2px solid rgba($color: #003b50, $alpha: .5);
+		}
+		&:hover:after {
+			background: rgba($color: #003b50, $alpha: .3);
+			border: 2px solid transparent;
+		}
+    }
+    #tabs{
+		a:after {background: #003b50;}
+		#current a {
+			color: #003b50
+		}
+	}
+}

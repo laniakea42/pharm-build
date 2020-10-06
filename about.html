@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>About</title>
+	<title>Lacalut главная</title>
 	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,12 +16,12 @@
 		</div>
 	</div>
 	
-	<header class="header">
+	<header class="header lacalut">
 		<div class="upper-header">
 			<div class="container flex center">
-				<a href="index.html" class="active"><i class="fa fa-home" aria-hidden="true"></i></a>
+				<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
 				<a href="index_drtheiss.html"><img src="./img/drth.png" alt=""></a>
-				<a href="index_lacalut.html"><img src="./img/lacalut.png" alt=""></a>
+				<a href="index_lacalut.html" class="active"><img src="./img/lacalut.png" alt=""></a>
 				<a href="index_dolgit.html"><img src="./img/dolgit.png" alt=""></a>
 				<a href="index_medipharma.html"><img src="./img/mediph.png" alt=""></a>
 			</div>
@@ -29,17 +29,17 @@
 	
 		<div class="down-header">
 			<div class="container flex center">
-				<a href="index.html" class="logo-link"><img src="./img/drth.png" alt=""></a>
+				<a href="index.html" class="logo-link"><img src="./img/lacalut.png" alt=""></a>
 	
 				<div class="second-section">
 					<nav class="nav flex center">
 						<ul class="flex center">
-							<li><a href="about.html">О компании</a></li>
-							<li class="dropdown">
-								<div class="triggered comps">Продукция</div>
-							</li>
-							<li><a href="#">Партнеры</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="about.html">О бренде</a></li>
+							<li><a href="catalog.html">Магазин</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Полезные советы</a></li>
+							<li><a href="#">Вопрос ответ</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
 						</ul>
 					</nav>
 					<form action="" class="search-bar">
@@ -51,38 +51,7 @@
 	
 				<button class="search-trigger basis"><i class="fa fa-search" aria-hidden="true"></i></button>
 	
-				<div class="soc-dd basis dropdown">
-					<button class="dd-trigger basis"><i class="fa fa-instagram" aria-hidden="true"></i></button>
-					<div class="dropdown-menu">
-						<a href="#" target="_blank" class="inst-link">
-							<div class="inst-btn">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-							</div>
-							<span>@drtheiss.kz</span>
-						</a>
-						<a href="#" target="_blank" class="inst-link">
-							<div class="inst-btn">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-							</div>
-							<span>@lacalut_kz</span>
-						</a>
-					</div>
-				</div>
 	
-				<div class="phones-dd dropdown">
-					<div class="col--phone">
-						<a href="tel:+77272683168">+7 (727) 268 31 68</a>
-						<div class="triggered"></div>
-					</div>
-					<div class="dropdown-menu">
-						<div class="col--phone">
-							<a href="tel:+7 (727) 268 31 68">+7 (727) 268 31 68</a>
-							<div class="triggered close-menu opened"></div>
-							<a href="tel:+7 (727) 268 31 68">+7 (727) 268 31 68</a>
-							<a href="tel:+7 (727) 268 31 68">+7 (727) 268 31 68</a>
-						</div>
-					</div>
-				</div>
 	
 				<a href="cart.html" class="cart-link">
 					<div class="img-c">
@@ -97,7 +66,7 @@
 	
 	</header>
 	
-	<div class="companies-container">
+	<div class="companies-container dolgit">
 		<div class="dropdown-menu companies flex center">
 			<a href="index_drtheiss.html" class="thei"><img src="./img/drth.png" alt=""></a>
 			<a href="index_lacalut.html"><img src="./img/lacalut.png" alt=""></a>
@@ -106,77 +75,188 @@
 		</div>
 	</div>
 	
+	<div class="modal" id="success-add">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<a href="#" class="close"></a>
+			<h4>Добавлено в корзину</h4>
+		</div>
+	</div>
+	
 	<div class="modal" id="success-send">
 		<div class="modal__layer"></div>
 		<div class="modal__block">
 			<a href="#" class="close"></a>
-			<h4>Ваша заявка успешно отправлена</h4>
+			<h4>Ваше сообщение успешно отправлено</h4>
 		</div>
 	</div>
+	<div class="wrapper lacalut page">
 
-    <footer class="footer">
-      <div class="upper container">
-        <div class="col">
-          <div class="title">Продукция</div>
-          <div class="check--list">
-            <li><a href="index_dolgit.html">Dolgit</a></li>
-            <li><a href="index_lacalut.html">Lacalut</a></li>
-            <li><a href="index_drtheiss.html">Dr. Theiss</a></li>
-            <li><a href="index_medipharma.html">Medipharma Cosmetics</a></li>
-          </div>
-        </div>
-        <div class="col">
-          <div class="title">Информация</div>
-          <div class="check--list">
-            <li><a href="about.html">О компании</a></li>
-            <li><a href="#">Продукция</a></li>
-            <li><a href="#" class="active">Партнеры</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </div>
-        </div>
-        <div class="col soc">
-          <div class="title">Мы в соц. сетях</div>
-    
-          <a href="#" target="_blank" class="inst-link">
-            <div class="inst-btn">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </div>
-            <span>@drtheiss.kz</span>
-          </a>
-    
-          <a href="#" target="_blank" class="inst-link">
-            <div class="inst-btn">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </div>
-            <span>@lacalut_kz</span>
-          </a>
-    
-        </div>
-    
-        <div class="col cts"><!--last-col-->
-          <div class="col--phone">
-            <a href="tel:+7 (727) 268 31 68">+7 (727) 268 31 68</a>
-            <a href="tel:+7 (727) 268-31-66">+7 (727) 268-31-66</a>
-          </div>
-          <div class="col--location">
-            050009, г. Алматы, ул. Ислам Каримов, дом 198
-          </div>
-          <div class="col--email">
-            <a href="mailto:info@drtheiss.kz">info@drtheiss.kz</a>
-          </div>
-        </div>
-    
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul>
+          <li><a href="index_lacalut.html">Главная</a></li>
+          <li>О бренде</li>
+        </ul>
       </div>
-      <div class="copy">
-        <div class="container flex spb center">
-          <div>Copyright &copy; 2020 Dr. Theiss. Все права защищены.</div>
-        <a href="https://artmedia.kz/" target="_blank">Создание сайта <img src="./img/art.png" alt=""></a>
+    </div>
+
+    <main class="about-page">
+      <div class="container">
+        <h1 class="page-heading">О бренде</h1>
+        <div class="ab-grid">
+          <div class="text">
+            <p>Свою историю стоматологическая серия LACALUT ведет с начала 20-х годов XX века. Высочайшее качество и эффективность обеспечили ей признание у специалистов и популярность у потребителей более 60 стран мира.</p>
+            <p>Несмотря на все последующие политические и экономические перипетии, все эти годы LACALUT сохранял свое присутствие в России. Продукция LACALUT подтверждала и укрепляла свой авторитет у специалистов, становясь все более доступной для потребителей, но не теряя при этом своего непревзойденного качества и эффективности.</p>
+            <p>Сегодня бренд LACALUT включает в себя широкий ассортимент средств для ухода за полостью рта: зубные пасты, ополаскиватели, зубные щетки, нити и ершики, а также средства по уходу за зубными протезами.</p>
+          </div>
+          <div class="img-c">
+            <img src="./img/ab1.jpg" alt="" class="wow fadeInUp">
+          </div>
+        </div>
+        <div class="ab-grid reverse">
+          <div class="img-c"><img src="./img/ab2.jpg" alt="" class="wow fadeInLeft"></div>
+          <div class="text">
+            <div class="subtitle">Вся продукция LACALUT производится исключительно в Германии</div>
+            <p>Производство расположено на фармацевтическом заводе и соответствует стандартам качества GMP</p>
+
+            <div class="subtitle">Все зубные пасты LACALUT одобрены Стоматологической Ассоциацией России</div>
+            <p>LACALUT рекомендуется в первую очередь людям, страдающим воспалительными заболеваниями пародонта и полости рта, кровоточивостью десен, а также для защиты от кариеса и гиперчувствительности зубной эмали, в том числе на фоне воспаления тканей пародонта.</p>
+
+            <div class="subtitle">Зубные пасты LACALUT aktiv и LACALUT sensitive — самые продаваемые пасты в аптеках</div>
+            <p>Бренд удостаивался звания «Марка № 1 в России» в категории «зубные пасты» пять раз подряд.</p>
+
+            <div class="subtitle"></div>
+            <p>В основе многих продуктов уникальный компонент — лактат алюминия</p>
+          </div>
         </div>
       </div>
-    </footer>
-    <script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/libs.js"></script>
-		<script src="js/wow.min.js"></script> <script> new WOW().init(); </script>
-		<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+
+      <div class="nums">
+        <div class="container">
+          <div class="nums-grid">
+            <div class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0s">
+              более
+              <div class="attention">90 лет</div>
+              на мировом рынке
+            </div>
+            <div class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".3s">
+              более
+              <div class="attention">60 стран</div>
+              рынок экспорта
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="ab-grid">
+          <div class="text">
+            <div class="subtitle"> В 1978 году Доктор Петер Тайсс открыл фармацевтический завод Dr. Theiss Naturwaren GmbH в Хомбурге</div>
+            <p>С 2009 г. предприятие располагается в оригинальном здании, которое является ярким примером современной архитектуры и пользуется повсеместным признанием.</p>
+            <p>Компания заслуженно гордится этим выдающимся сооружением и планирует в дальнейшем оставаться на этом месте, чтобы иметь право экспортировать свою продукцию на мировой рынок с пометкой «Сделано в Хомбурге».</p>
+          </div>
+          <div class="img-c"><img class="wow fadeInRight" src="./img/ab3.jpg" alt=""></div>
+        </div>
+
+        <div class="ab-grid reverse">
+          <div class="img-c"><img class="wow fadeInLeft" src="./img/ab4.jpg" alt=""></div>
+          <div class="text">
+            <div class="title">
+              Ассортимент выпускаемой продукции LACALUT включает
+              более 40 наименований
+            </div>
+            <p>В разработке и создании зубных паст и ополаскивателей LACALUT компания использует самые современные компоненты и инновационные технологии.</p>
+            <p>Производство осуществляется под строгим контролем качества, введенным на предприятии, и под личным контролем директора, который видит свою миссию в сохранении высочайшего немецкого качества продукции бренда LACALUT.</p>
+          </div>
+        </div>
+
+        <div class="ab-grid">
+          <div class="text">
+            <p>
+              Ежегодно LACALUT выпускает новые продукты, в составе которых часто содержатся экологически чистые натуральные компоненты из растительного сырья. Процесс создания новых зубных паст
+              и ополаскивателей проходит в собственной научной лаборатории под руководством Доктора Петера Тайсса, основателя компании и Доктора наук по естествознанию.</p>
+            <p>Качество всей продукции LACALUT подтверждено результатами многоцентровых рандомизированных клинических исследований по безопасности и эффективности.</p>
+          </div>
+          <div class="img-c"><img class="wow fadeInRight" src="./img/ab5.jpg" alt=""></div>
+        </div>
+      </div>
+    </main>
+
+
+  </div>
+  <footer class="footer lacalut">
+    <div class="upper container">
+      <div class="col">
+        <div class="title">Продукция</div>
+        <div class="check--list">
+          <li><a href="index_dolgit.html">Dolgit</a></li>
+          <li><a href="index_lacalut.html">Lacalut</a></li>
+          <li><a href="index_drtheiss.html">Dr. Theiss</a></li>
+          <li><a href="index_medipharma.html">Medipharma Cosmetics</a></li>
+        </div>
+      </div>
+      <div class="col">
+        <div class="title">Информация</div>
+        <div class="check--list">
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="#">Продукция</a></li>
+          <li><a href="#" class="active">Партнеры</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </div>
+      </div>
+      <div class="col soc">
+        <div class="title">Мы в соц. сетях</div>
+  
+        <a href="#" target="_blank" class="inst-link">
+          <div class="inst-btn">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <span>@drtheiss.kz</span>
+        </a>
+  
+        <a href="#" target="_blank" class="inst-link">
+          <div class="inst-btn">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <span>@lacalut_kz</span>
+        </a>
+  
+      </div>
+  
+      <div class="col cts"><!--last-col-->
+        <div class="col--phone">
+          <a href="tel:+7 (727) 268 31 68">+7 (727) 268 31 68</a>
+          <a href="tel:+7 (727) 268-31-66">+7 (727) 268-31-66</a>
+        </div>
+        <div class="col--location">
+          050009, г. Алматы, ул. Ислам Каримов, дом 198
+        </div>
+        <div class="col--email">
+          <a href="mailto:info@drtheiss.kz">info@drtheiss.kz</a>
+        </div>
+      </div>
+  
+    </div>
+    <div class="copy">
+      <div class="container flex spb center">
+        <div>Copyright &copy; 2020 Dr. Theiss. Все права защищены.</div>
+      <a href="https://artmedia.kz/" target="_blank">Создание сайта <img src="./img/art.png" alt=""></a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/libs.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass:     'wow',      
+      animateClass: 'animated', 
+      offset:       0,          
+      mobile:       false,       
+      live:         true        
+  })
+  wow.init();		
+  </script>
+  <script type="text/javascript" src="js/main.js"></script>
+  </body>
+  </html>
