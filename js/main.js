@@ -76,21 +76,99 @@ $(function(){
         slidesToShow: 5,
         autoplay: true,
         arrows: true,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1795,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 1120,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 635,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.tab2-slider').slick({
         slidesToShow: 5,
         autoplay: true,
         arrows: true,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1795,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 1120,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 635,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.tab3-slider').slick({
         slidesToShow: 5,
         autoplay: true,
         arrows: true,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1795,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 1120,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 635,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.search-trigger').on('click', function() {
@@ -187,9 +265,11 @@ $(function(){
         if ($('header .nav').is(':visible')) {
             $('header .nav').slideUp();
             $(this).removeClass('open');
+            $('body').css({'overflow': 'visible'});
         } else {
             $('header .nav').slideDown();
             $(this).addClass('open');
+            $('body').css({'overflow': 'hidden'});
         }
         return false;
     });

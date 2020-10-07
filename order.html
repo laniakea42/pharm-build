@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="dolgit">
+<body class="lacalut">
 	<div class="preload">
 		<div class="sk-double-bounce">
 			<div class="sk-child sk-double-bounce-1"></div>
@@ -97,108 +97,159 @@
 			<h4>Ваше сообщение успешно отправлено</h4>
 		</div>
 	</div>
-	<div class="wrapper page cart-page">
+	<div class="wrapper page">
 
     <div class="breadcrumbs">
       <div class="container">
         <ul>
           <li><a href="index_lacalut.html">Главная</a></li>
-          <li>Корзина</li>
+          <li><a href="cart.html">Корзина</a></li>
+          <li>Оформление заказа</li>
         </ul>
       </div>
     </div>
 
     <main>
       <div class="container">
-        <h1 class="page-heading">Корзина</h1>
-        <div class="table-c">
-          <table class="cart-table">
-            <thead>
-              <tr>
-                <th class="head-name">Наименование товара</th>
-                <th>Цена</th>
-                <th>Кол-во</th>
-                <th colspan="2">Сумма</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="t-name">
-                  <div class="img-c"><img src="./img/l2.jpg" alt=""></div>
-                  <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
-                </td>
-                <td class="price-col"><div class="price">1 050</div></td>
-  
-                <td class="amount-col">
-                  <div action="" class="add-to-cart">
-                    <input type="text" value="1" class="input-counter" tabindex="0">
-                    <div class="btns-col">
-                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
-                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                    </div>
-                  </div>
-                </td>
-  
-                <td><div class="price">2 100</div></td>
-                <td><div class="close"></div></td>
-              </tr>
-  
-              <tr>
-                <td class="t-name">
-                  <div class="img-c"><img src="./img/l2.jpg" alt=""></div>
-                  <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
-                </td>
-                <td class="price-col"><div class="price">1 050</div></td>
-  
-                <td class="amount-col">
-                  <div action="" class="add-to-cart">
-                    <input type="text" value="1" class="input-counter" tabindex="0">
-                    <div class="btns-col">
-                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
-                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                    </div>
-                  </div>
-                </td>
-  
-                <td><div class="price">2 100</div></td>
-                <td><div class="close"></div></td>
-              </tr>
-  
-              <tr>
-                <td class="t-name">
-                  <div class="img-c"><img src="./img/l2.jpg" alt=""></div>
-                  <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
-                </td>
-                <td class="price-col"><div class="price">1 050</div></td>
-  
-                <td class="amount-col">
-                  <div action="" class="add-to-cart">
-                    <input type="text" value="1" class="input-counter" tabindex="0">
-                    <div class="btns-col">
-                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
-                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                    </div>
-                  </div>
-                </td>
-  
-                <td><div class="price">2 100</div></td>
-                <td><div class="close"></div></td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
-        <div class="cart-total flex center">
-          Итого:
-          <div class="price">4 200</div>
+        <h1 class="page-heading">Оформление заказа</h1>
 
-          <a href="order.html" class="btn">Оформить заказ</a>
+        <div class="order-grid">
+          <form action="" class="main-col">
+            <div class="c-unit">
+              <div class="subtitle">Контактная информация</div>
+              <div class="grid-halfs">
+                <label>Имя <span>*</span>
+                  <input type="text" required>
+                </label>
+                <label>Фамилия <span>*</span>
+                  <input type="text" required>
+                </label>
+                <label>E-mail <span>&nbsp;</span>
+                  <input type="email">
+                </label>
+                <label>Номер телефона <span>*</span>
+                  <input type="tel" class="tel" required placeholder="+7 (___) ___-__-__">
+                </label>
+              </div>
+            </div>
+
+            <div class="c-unit">
+              <div class="subtitle">Доставка</div>
+              <div class="grid-halfs">
+
+                <label for="last" class="custom-label pad">
+                  <input id="last" name="name1" type="radio" checked class="custom-checkbox">
+                  <div class="text">
+                    <b>Курьерская доставка</b>
+                    по г. Алматы
+                  </div>
+                  <span class="checkmark"></span>
+                </label>
+
+                <label for="this" class="custom-label pad">
+                  <input id="this" name="name1" type="radio" class="custom-checkbox">
+                  <div class="text">
+                    <b>Курьерская доставка</b>
+                    по г. Алматы
+                  </div>
+                  <span class="checkmark"></span>
+                </label>
+
+              </div>
+              <label>Адрес доставки <span>*</span>
+                <input type="text" required placeholder="Город, улица, дом, строение корпус, квартира">
+              </label>
+            </div>
+
+
+            <div class="c-unit">
+              <div class="subtitle">Оплата</div>
+              <div class="grid-halfs">
+
+                <label for="qwe" class="custom-label pad">
+                  <input id="qwe" name="payment" type="radio" checked class="custom-checkbox">
+                  <div class="text">
+                    <b>Наличный расчёт</b>
+                    оплата курьеру при получении товара
+                  </div>
+                  <span class="checkmark"></span>
+                </label>
+
+                <label for="asd" class="custom-label pad">
+                  <input id="asd" name="payment" type="radio" class="custom-checkbox">
+                  <div class="text">
+                    <b>Оплата картой</b>
+                    при получении картами Visa / MasterCard
+                  </div>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="c-unit">
+              <div class="subtitle">Комментарий к заказу</div>
+              <label class="l-textarea"><div>Текст сообщения</div>
+                <textarea></textarea>
+              </label>
+            </div>
+
+            <label for="zxc" class="custom-label agreement">
+							<input id="zxc" type="checkbox" checked class="custom-checkbox">
+							<div class="text">
+                Я подтверждаю достоверность введенных мною сведений и даю согласие на обработку моих персональных данных в соответствие<br>c 
+                <a href="#">Политикой Конфиденциальности</a>
+                и 
+                <a href="#">Пользовательским соглашением</a>
+							</div>
+							<span class="checkmark"></span>
+						</label>
+
+            <button class="btn open--modal" type="submit" data-modal="#success-order">Оформить заказ</button>
+
+          </form>
+
+
+          <div class="side-col">
+            <div class="check">
+              <div class="b-lined">
+                <b>3 товара на сумму <span class="price">4 200</span></b>
+              </div>
+              <div class="b-lined">
+                <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
+                <div class="pale">2 шт. х <span class="price">1 050</span></div>
+
+                <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
+                <div class="pale">2 шт. х <span class="price">1 050</span></div>
+
+                <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
+                <div class="pale">2 шт. х <span class="price">1 050</span></div>
+              </div>
+
+              <div class="b-lined">
+                <div class="flex center spb">
+                  <div class="pale">Сумма заказа</div>
+                  <div class="price">4 200</div>
+                </div>
+                <div class="flex center spb">
+                  <div class="pale">Стоимость доставки</div>
+                  <div class="price">4 200</div>
+                </div>
+              </div>
+
+              <div class="check__total">
+                <div>Итого:</div>
+                <div class="price">4 200</div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </main>
 
   </div>
-<footer class="footer">
+<footer class="footer lacalut">
   <div class="upper container">
     <div class="col">
       <div class="title">Продукция</div>
@@ -239,7 +290,7 @@
 
     <div class="col cts"><!--last-col-->
       <div class="col--phone">
-        <a href="tel:+7 (727) 268 31 68">+7 (727) 268-31-68</a>
+        <a href="tel:+7 (727) 268 31 68">+7 (727) 268 31 68</a>
         <a href="tel:+7 (727) 268-31-66">+7 (727) 268-31-66</a>
       </div>
       <div class="col--location">

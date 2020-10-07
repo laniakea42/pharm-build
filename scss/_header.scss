@@ -529,12 +529,12 @@ input[type="submit"] {
 /* header */
 header {
 	
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 1010px) {
 		.nav--btn {
-			width: 35px;
+			width: 30px;
 			height: 30px;
-			position: absolute;
-			left: 0;
+			position: relative;
+			left: -2px;
 			top: 0px;
 			padding: 0;
 			margin: 0;
@@ -577,6 +577,12 @@ header {
 		}
 	}
 }
+
+.theis .header .nav--btn span{background-color: $orange;}
+.dolgit .header .nav--btn span{background-color: #0050ae;}
+.lacalut .header .nav--btn span{background-color: #e31e24;}
+.mediph .header .nav--btn span{background-color: #003b50;}
+
 /* header */
 
 .dropdown {
@@ -641,6 +647,7 @@ body {padding-top: 137px;}
 			height: 100%;
 			border: 0; border-right: 1px solid #e8e8e8;
 		}
+		a.active {color: #bbb; pointer-events: none;}
 	}
 	.second-section {
 		position: relative;

@@ -63,4 +63,50 @@
     img {display: inline; vertical-align: middle;}
   }
 }
-/* footer */
+
+.theis .footer a:hover {color: $orange !important}
+.dolgit .footer a:hover {color: #0050ae !important}
+.lacalut .footer a:hover {color: #e31e24!important}
+.mediph .footer a:hover {color: #003b50!important}
+
+
+
+.footer {
+  @media (max-width: 1010px) {
+    .upper {gap: 15px; padding: 40px 15px 45px;}
+    .title {font-size: 18px;}
+    .col--phone a {font-size: 20px;}
+    .col--location, .col--email a,
+    .inst-link span, .check--list li a {font-size: 16px;}
+  }
+  
+  @media (max-width: 905px) {
+    .col:not(.soc):not(.cts) {display: none;}
+    .cts {grid-column: 1 / 2; grid-row: 1 / 2}
+    .soc {grid-column: 2 / 3;}
+    .upper {grid-template-columns: 1fr 1fr;}
+  }
+  @media (max-width: 530px) {
+    .upper {
+      grid-template-columns: 1fr;
+      padding: 30px 15px 20px;
+    }
+    .cts, .soc {grid-column: span 1; }
+    .col--phone, .col--location {margin-bottom: 10px;}
+    .col--phone a {line-height: 1.4;}
+    .col--phone:after {top: 5px;}
+    .copy .container {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: auto;
+      font-size: 12px;
+      padding: 10px 15px;
+      a {margin-top: 5px; font-size: 12px;}
+    }
+  }
+  .col--location:after {font-size: 16px; top: 2px}
+  .col--email:after {font-size: 13px; top: 4px;}
+  .col--phone:after {font-size: 16px; top: 6px;}
+  .title {line-height: 1.4; margin-bottom: 5px; margin-top: 10px;}
+}
