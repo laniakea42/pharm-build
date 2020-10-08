@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>dolgit order</title>
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dolgit">
+	//= template/header1.html
+	<div class="wrapper page">
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul>
+          <li><a href="index_lacalut.html">Главная</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+          <li>Оформление заказа</li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <h1 class="page-heading">Оформление заказа</h1>
+
+        <div class="order-grid">
+          <form action="" class="main-col">
+            <div class="c-unit">
+              <div class="subtitle">Контактная информация</div>
+              <div class="grid-halfs">
+                <label>Имя <span>*</span>
+                  <input type="text" required>
+                </label>
+                <label>Фамилия <span>*</span>
+                  <input type="text" required>
+                </label>
+                <label>E-mail <span>&nbsp;</span>
+                  <input type="email">
+                </label>
+                <label>Номер телефона <span>*</span>
+                  <input type="tel" class="tel" required placeholder="+7 (___) ___-__-__">
+                </label>
+              </div>
+            </div>
+
+            <div class="c-unit">
+              <div class="subtitle">Доставка</div>
+              <div class="grid-halfs">
+
+                <label for="last" class="custom-label pad">
+                  <input id="last" name="name1" type="radio" checked class="custom-checkbox">
+                  <div class="text">
+                    <b>Курьерская доставка</b>
+                    по г. Алматы
+                  </div>
+                  <span class="checkmark"></span>
+                </label>
+
+                <label for="this" class="custom-label pad">
+                  <input id="this" name="name1" type="radio" class="custom-checkbox">
+                  <div class="text">
+                    <b>Курьерская доставка</b>
+                    по г. Алматы
+                  </div>
+                  <span class="checkmark"></span>
+                </label>
+
+              </div>
+              <label>Адрес доставки <span>*</span>
+                <input type="text" required placeholder="Город, улица, дом, строение корпус, квартира">
+              </label>
+            </div>
+
+
+            <div class="c-unit">
+              <div class="subtitle">Оплата</div>
+              <div class="grid-halfs">
+
+                <label for="qwe" class="custom-label pad">
+                  <input id="qwe" name="payment" type="radio" checked class="custom-checkbox">
+                  <div class="text">
+                    <b>Наличный расчёт</b>
+                    оплата курьеру при получении товара
+                  </div>
+                  <span class="checkmark"></span>
+                </label>
+
+                <label for="asd" class="custom-label pad">
+                  <input id="asd" name="payment" type="radio" class="custom-checkbox">
+                  <div class="text">
+                    <b>Оплата картой</b>
+                    при получении картами Visa / MasterCard
+                  </div>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="c-unit">
+              <div class="subtitle">Комментарий к заказу</div>
+              <label class="l-textarea"><div>Текст сообщения</div>
+                <textarea></textarea>
+              </label>
+            </div>
+
+            <label for="zxc" class="custom-label agreement">
+							<input id="zxc" type="checkbox" checked class="custom-checkbox">
+							<div class="text">
+                Я подтверждаю достоверность введенных мною сведений и даю согласие на обработку моих персональных данных в соответствие <br>c 
+                <a href="#">Политикой Конфиденциальности</a>
+                и 
+                <a href="#">Пользовательским соглашением</a>
+							</div>
+							<span class="checkmark"></span>
+						</label>
+
+            <button class="btn open--modal" type="submit" data-modal="#success-order">Оформить заказ</button>
+
+          </form>
+
+
+          <div class="side-col">
+            <div class="check">
+              <div class="b-lined">
+                <b>3 товара на сумму <span class="price">4 200</span></b>
+              </div>
+              <div class="b-lined">
+                <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
+                <div class="pale">2 шт. х <span class="price">1 050</span></div>
+
+                <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
+                <div class="pale">2 шт. х <span class="price">1 050</span></div>
+
+                <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
+                <div class="pale">2 шт. х <span class="price">1 050</span></div>
+              </div>
+
+              <div class="b-lined">
+                <div class="flex center spb">
+                  <div class="pale">Сумма заказа</div>
+                  <div class="price">4 200</div>
+                </div>
+                <div class="flex center spb">
+                  <div class="pale">Стоимость доставки</div>
+                  <div class="price">4 200</div>
+                </div>
+              </div>
+
+              <div class="check__total">
+                <div>Итого:</div>
+                <div class="price">4 200</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+//= template/footer.html
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/libs.js"></script>
+<script>
+  wow = new WOW({
+    boxClass:     'wow',      
+    animateClass: 'animated', 
+    offset:       0,          
+    mobile:       false,       
+    live:         true        
+})
+wow.init();		
+</script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

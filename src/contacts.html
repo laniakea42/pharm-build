@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lacalut Контакты</title>
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lacalut">
+	//= template/header2.html
+	<div class="wrapper page cts-page">
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul>
+          <li><a href="index_lacalut.html">Главная</a></li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <div class="container margin-fix">
+				<h1 class="page-heading">Контакты</h1>
+				
+				<div class="cts-bar">
+					<div class="flex spb">
+						<div>
+							<div class="pale">Телефон:</div>
+							<div class="col--phone prop">
+								<a href="tel:+7 (727) 268 31 68">+7 (727) 268-31-68</a>
+								<a href="tel:+7 (727) 268-31-66">+7 (727) 268-31-66</a>
+							</div>
+						</div>
+						<div>
+							<div class="pale">Адрес:</div>
+							<div class="col--location prop">
+								050009, г. Алматы,
+								ул. Ислам Каримов д.198
+							</div>
+						</div>
+						<div>
+							<div class="pale">Эл. почта:</div>
+							<div class="col--email prop">
+								<a href="mailto:info@drtheiss.kz">info@drtheiss.kz</a>
+							</div>
+						</div>
+						<div>
+							<div class="pale">Мы в соц. сетях:</div>
+							<div class="col--inst prop">
+								<a href="#" target="_blank">@lacalut_kz</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="map" style="background-color: #f2f2f2;">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa00e6e4ab2cda0c195de03b693c5f68b5f19ce54a88e8b952e2eb24cd2eca95a&amp;width=100%25&amp;height=612&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+
+			<section class="contact-us">
+				<div class="container">
+					<h3>Напишите нам</h3>
+					<form action="">
+						<div class="cts-grid">
+							<label>Имя <span>*</span>
+								<input type="text" required>
+							</label>
+							<label>Номер телефона <span>*</span>
+								<input type="tel" class="tel" required>
+							</label>
+
+							<label>E-mail <span>&nbsp;</span>
+								<input type="email">
+							</label>
+
+							<label class="ta-label">Текст сообщения <span>&nbsp;</span>
+								<textarea></textarea>
+							</label>
+
+							<div class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfycasZAAAAAOleQj_j_cJoz1tKKWUcEs1p_Thw&amp;co=aHR0cDovL2x1Y2t5ZW5nbGlzaC45ei5rejo4MA..&amp;hl=en&amp;v=Y5tQ3lKwn1XL5hGgLz1kR4-1&amp;size=normal&amp;cb=owkgdt34o2cs" width="304" height="78" role="presentation" name="a-ipt6emqw6n0c" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+
+						</div>
+
+						<label for="last" class="custom-label agreement">
+							<input id="last" type="checkbox" checked class="custom-checkbox">
+							<div class="text">
+								Я даю согласие на обработку своих персональных данных и соглашаюсь с 
+								<a href="#">Условиями использования</a> и <a href="#">Политикой конфиденциальности</a>
+							</div>
+							<span class="checkmark"></span>
+						</label>
+
+						<button class="btn open--modal" type="submit" data-modal="#success-send">
+							Отправить
+						</button>
+
+					</form>
+				</div>
+			</section>
+    </main>
+  </div>
+  //= template/footer.html
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/libs.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass:     'wow',      
+      animateClass: 'animated', 
+      offset:       0,          
+      mobile:       false,       
+      live:         true        
+  })
+  wow.init();		
+  </script>
+  <script type="text/javascript" src="js/main.js"></script>
+  </body>
+  </html>
