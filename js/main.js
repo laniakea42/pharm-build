@@ -177,6 +177,10 @@ $(function(){
     $('.close-bar').on('click', function() {
         $('.search-bar').toggleClass('active')
     });
+
+    $('.cart-table .close').on('click', function() {
+        $(this).parent().parent().remove();
+    })
     
     $(".add-to-cart .plus").click(function(event) {
         event.preventDefault();

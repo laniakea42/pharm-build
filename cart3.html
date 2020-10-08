@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Lacalut КАТАЛОГ</title>
+	<title>theis cart</title>
 	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="lacalut">
+<body class="mediph">
 	<div class="preload">
 		<div class="sk-double-bounce">
 			<div class="sk-child sk-double-bounce-1"></div>
@@ -16,37 +16,35 @@
 		</div>
 	</div>
 	
-	<header class="header lacalut">
+	<header class="header mediph">
 		<div class="upper-header">
 			<div class="container flex center">
 				<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
 				<a href="index_drtheiss.html"><img src="./img/drth.png" alt=""></a>
-				<a href="index_lacalut.html" class="active"><img src="./img/lacalut.png" alt=""></a>
+				<a href="index_lacalut.html"><img src="./img/lacalut.png" alt=""></a>
 				<a href="index_dolgit.html"><img src="./img/dolgit.png" alt=""></a>
-				<a href="index_medipharma.html"><img src="./img/mediph.png" alt=""></a>
+				<a href="index_medipharma.html" class="active"><img src="./img/mediph.png" alt=""></a>
 			</div>
 		</div>
 	
 		<div class="down-header">
 			<div class="container flex center">
-	
 				<div class="nav--btn">
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
-	
-				<a href="index.html" class="logo-link"><img src="./img/lacalut.png" alt=""></a>
+				<a href="index.html" class="logo-link"><img src="./img/mediph_logo.png" alt=""></a>
 	
 				<div class="second-section">
 					<nav class="nav flex center">
 						<ul class="flex center">
-							<li><a href="about.html">О бренде</a></li>
-							<li><a href="catalog.html">Магазин</a></li>
+							<li><a href="about4.html">О бренде</a></li>
+							<li><a href="catalog2.html">Магазин</a></li>
 							<li><a href="#">Доставка и оплата</a></li>
-							<li><a href="#" class="active">Полезные советы</a></li>
+							<li><a href="#">Полезные советы</a></li>
 							<li><a href="#">Вопрос ответ</a></li>
-							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="contacts2.html">Контакты</a></li>
 						</ul>
 					</nav>
 					<form action="" class="search-bar">
@@ -60,7 +58,7 @@
 	
 	
 	
-				<a href="cart.html" class="cart-link">
+				<a href="cart3.html" class="cart-link">
 					<div class="img-c">
 						<img src="./img/basket.svg" alt="">
 						<div class="num">0</div>
@@ -105,54 +103,110 @@
 			<h4>Ваше сообщение успешно отправлено</h4>
 		</div>
 	</div>
-	<div class="wrapper page">
+	<div class="wrapper page cart-page">
 
     <div class="breadcrumbs">
       <div class="container">
         <ul>
           <li><a href="index_lacalut.html">Главная</a></li>
-          <li>Магазин</li>
+          <li>Корзина</li>
         </ul>
       </div>
     </div>
 
     <main>
       <div class="container">
-        <h1 class="page-heading">Взрослые зубные пасты</h1>
-
-        <div class="store-section">
-          <div class="store-grid">
-            <a href="catalog.html" class="store-link">
-              <img src="./img/l1.jpg" alt="">
-              <div class="title">Новинки</div>
-            </a>
+        <h1 class="page-heading">Корзина</h1>
+        <div class="table-c">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th class="head-name">Наименование товара</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th colspan="2">Сумма</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="t-name">
+                  <div class="img-c"><img src="./img/l2.jpg" alt=""></div>
+                  <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
+                </td>
+                <td class="price-col m-pseudo" data-label="Цена"><div class="price">1 050</div></td>
   
-            <a href="catalog.html" class="store-link">
-              <img src="./img/l2.jpg" alt="">
-              <div class="title">Взрослые зубные пасты</div>
-            </a>
+                <td class="amount-col m-pseudo" data-label="Кол-во">
+                  <div action="" class="add-to-cart">
+                    <input type="text" value="1" class="input-counter" tabindex="0">
+                    <div class="btns-col">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </td>
   
-            <a href="catalog.html" class="store-link">
-              <img src="./img/l3.jpg" alt="">
-              <div class="title">Зубные щетки</div>
-            </a>
+                <td class="m-pseudo" data-label="Сумма"><div class="price">2 100</div></td>
+                <td><div class="close"></div></td>
+              </tr>
   
-            <a href="catalog.html" class="store-link">
-              <img src="./img/l4.jpg" alt="">
-              <div class="title">Ополаскиватели для полости рта</div>
-            </a>
+              <tr>
+                <td class="t-name">
+                  <div class="img-c"><img src="./img/l2.jpg" alt=""></div>
+                  <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
+                </td>
+                <td class="price-col m-pseudo" data-label="Цена"><div class="price">1 050</div></td>
+  
+                <td class="amount-col m-pseudo" data-label="Кол-во">
+                  <div action="" class="add-to-cart">
+                    <input type="text" value="1" class="input-counter" tabindex="0">
+                    <div class="btns-col">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </td>
+  
+                <td class="m-pseudo" data-label="Сумма"><div class="price">2 100</div></td>
+                <td><div class="close"></div></td>
+              </tr>
+  
+              <tr>
+                <td class="t-name">
+                  <div class="img-c"><img src="./img/l2.jpg" alt=""></div>
+                  <div class="name">LACALUT Aktiv  лечебно-профилактическая зубная паста, 75 мл</div>
+                </td>
+                <td class="price-col m-pseudo" data-label="Цена"><div class="price">1 050</div></td>
+  
+                <td class="amount-col m-pseudo" data-label="Кол-во">
+                  <div action="" class="add-to-cart">
+                    <input type="text" value="1" class="input-counter" tabindex="0">
+                    <div class="btns-col">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </td>
+  
+                <td class="m-pseudo" data-label="Сумма"><div class="price">2 100</div></td>
+                <td><div class="close"></div></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="cart-total flex center">
+          <span>
+            Итого:
+            <div class="price">4 200</div>
+          </span>
 
-            <a href="catalog.html" class="store-link">
-              <img src="./img/l5.jpg" alt="">
-              <div class="title">Детская линейка</div>
-            </a>
-
-          </div>
+          <a href="order3.html" class="btn">Оформить заказ</a>
         </div>
       </div>
     </main>
+
   </div>
-<footer class="footer lacalut">
+<footer class="footer">
   <div class="upper container">
     <div class="col">
       <div class="title">Продукция</div>
@@ -193,7 +247,7 @@
 
     <div class="col cts"><!--last-col-->
       <div class="col--phone">
-        <a href="tel:+7 (727) 268 31 68">+7 (727) 268 31 68</a>
+        <a href="tel:+7 (727) 268 31 68">+7 (727) 268-31-68</a>
         <a href="tel:+7 (727) 268-31-66">+7 (727) 268-31-66</a>
       </div>
       <div class="col--location">
