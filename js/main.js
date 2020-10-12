@@ -16,19 +16,20 @@ function sliders() {
         asNavFor: '.cat--unit__nav'
     });
     $('.cat--unit__nav').slick({
-        autoplay: true,
-        slidesToShow: 4,
+        // autoplay: true,
+        slidesToShow: 3,
         slidesToScroll: 1,
+        centerMode: true,
         asNavFor: '.cat--unit__for',
+        variableWidth: true,
         dots: false,
         arrows: true,
         focusOnSelect: true,
-        vertical: true,
         responsive: [
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 1
                 }
             }
         ]
@@ -53,6 +54,20 @@ $(document).ready(function() {
 
 
 $(function(){
+
+    $('.cat-title').on('click', function(e) {
+        if ($(this).hasClass('active')) {
+            $('.cat-title').removeClass('active');
+            $(this).next().slideUp();
+            return
+        } else {
+            $('.cat-title').removeClass('active');
+            $('.subtitles').slideUp();
+
+            $(this).toggleClass('active');
+            $(this).next().slideToggle();
+        }
+    })
 
     $('.i-slider').slick({
         slidesToShow: 1,
